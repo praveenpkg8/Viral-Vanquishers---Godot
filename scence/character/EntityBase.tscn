@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvh0k335yu2ie"]
+
+[ext_resource type="Script" path="res://scence/character/EntityBase.gd" id="1_thb73"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ujj41"]
+
+[node name="EntityBase" type="CharacterBody2D"]
+script = ExtResource("1_thb73")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_ujj41")
+anim_player = NodePath("../AnimationPlayer")

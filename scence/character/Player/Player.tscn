@@ -1,0 +1,312 @@
+[gd_scene load_steps=69 format=3 uid="uid://deqeu0ppbible"]
+
+[ext_resource type="PackedScene" uid="uid://cvh0k335yu2ie" path="res://scence/character/EntityBase.tscn" id="1_02dvs"]
+[ext_resource type="Texture2D" uid="uid://yf0rgdj4cs3n" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_0.png" id="2_l2p7w"]
+[ext_resource type="Script" path="res://scence/character/Player/Player.gd" id="2_w1yt8"]
+[ext_resource type="Texture2D" uid="uid://cmycxru57lc18" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_1.png" id="3_dfo1i"]
+[ext_resource type="Texture2D" uid="uid://7q2nw18ekofi" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_2.png" id="4_sbtrx"]
+[ext_resource type="Texture2D" uid="uid://bpxunwpa18r3x" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_3.png" id="5_712od"]
+[ext_resource type="Texture2D" uid="uid://bux0ragiyrson" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_4.png" id="6_hwuwa"]
+[ext_resource type="Texture2D" uid="uid://cqvoq2wmcurns" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_5.png" id="7_b3gvv"]
+[ext_resource type="Texture2D" uid="uid://bkqdcik0dcw1o" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_6.png" id="8_i7mj6"]
+[ext_resource type="Texture2D" uid="uid://bskv822iokucq" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_00.png" id="9_6tuq0"]
+[ext_resource type="Texture2D" uid="uid://lac4pwgixgbp" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_01.png" id="10_rqrn8"]
+[ext_resource type="Texture2D" uid="uid://y51fw5qy7a3j" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_02.png" id="11_bqvra"]
+[ext_resource type="Texture2D" uid="uid://chy560egtw2ug" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_03.png" id="12_hrbfd"]
+[ext_resource type="Texture2D" uid="uid://hb3iifnrjafb" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_04.png" id="13_m3k2m"]
+[ext_resource type="Texture2D" uid="uid://s4bjg86b2o1t" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_05.png" id="14_i6n27"]
+[ext_resource type="Texture2D" uid="uid://c1ibwlkcrumoh" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_06.png" id="15_rbhh5"]
+[ext_resource type="Texture2D" uid="uid://s50v1a4kdiyo" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_07.png" id="16_hplh4"]
+[ext_resource type="Texture2D" uid="uid://dlp0jkej456dv" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_08.png" id="17_ex24c"]
+[ext_resource type="Texture2D" uid="uid://yue3aahouwao" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_09.png" id="18_kx32u"]
+[ext_resource type="Texture2D" uid="uid://bgr6kooslq57" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_10.png" id="19_al8nx"]
+[ext_resource type="Texture2D" uid="uid://cugpxhuow5orn" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_11.png" id="20_nywqp"]
+[ext_resource type="Texture2D" uid="uid://dalt27rm24wse" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_12.png" id="21_5gm5m"]
+[ext_resource type="Texture2D" uid="uid://c8eeistuubaxy" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_13.png" id="22_av0dc"]
+[ext_resource type="Texture2D" uid="uid://4jl4l8by7fmn" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_14.png" id="23_sy62a"]
+[ext_resource type="Texture2D" uid="uid://c6pxoecdg035w" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_15.png" id="24_bpagh"]
+[ext_resource type="Texture2D" uid="uid://18dpshdau6k2" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_16.png" id="25_a3try"]
+[ext_resource type="Texture2D" uid="uid://be287vv7mgct4" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_17.png" id="26_e5d6j"]
+[ext_resource type="Texture2D" uid="uid://dadkhmct7fbsc" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_18.png" id="27_037at"]
+[ext_resource type="Texture2D" uid="uid://ds55rjrqgkn4j" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-death_19.png" id="28_fq6et"]
+[ext_resource type="Texture2D" uid="uid://dlyoe1fwhoih" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_00.png" id="29_djdyx"]
+[ext_resource type="Texture2D" uid="uid://ccfkp0ngc7hor" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_01.png" id="30_nxu4c"]
+[ext_resource type="Texture2D" uid="uid://cw1bpqdlvs4cs" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_02.png" id="31_em1mh"]
+[ext_resource type="Texture2D" uid="uid://dbgld5v83vvop" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_03.png" id="32_u4fu6"]
+[ext_resource type="Texture2D" uid="uid://be7byhob0taey" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_04.png" id="33_73uaa"]
+[ext_resource type="Texture2D" uid="uid://d1gkst2ofjkc0" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_05.png" id="34_8do74"]
+[ext_resource type="Texture2D" uid="uid://bn6wonvdyxpeg" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_06.png" id="35_7r7g1"]
+[ext_resource type="Texture2D" uid="uid://1gdoy20a0r64" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_07.png" id="36_letln"]
+[ext_resource type="Texture2D" uid="uid://0yrgoh46bn3a" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_08.png" id="37_3ajer"]
+[ext_resource type="Texture2D" uid="uid://c6snd47e6d0pl" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-hit_09.png" id="38_pl7fm"]
+[ext_resource type="Texture2D" uid="uid://c6ciydw850l61" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_00.png" id="39_u76we"]
+[ext_resource type="Texture2D" uid="uid://cwl1h5e1y0x68" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_01.png" id="40_1gxb5"]
+[ext_resource type="Texture2D" uid="uid://rc0tlsdeibd3" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_02.png" id="41_eijsc"]
+[ext_resource type="Texture2D" uid="uid://2m2lhxrwlwh5" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_03.png" id="42_ge5wa"]
+[ext_resource type="Texture2D" uid="uid://cg56wajvtgq8j" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_04.png" id="43_5f8ap"]
+[ext_resource type="Texture2D" uid="uid://xododot0tt6l" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_05.png" id="44_2mcx7"]
+[ext_resource type="Texture2D" uid="uid://c3plhugl6eerg" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_06.png" id="45_p3qvi"]
+[ext_resource type="Texture2D" uid="uid://d0qk1ffm0td03" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_07.png" id="46_qg8tn"]
+[ext_resource type="Texture2D" uid="uid://bh5a7kwg1a6qd" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_08.png" id="47_lubvc"]
+[ext_resource type="Texture2D" uid="uid://1nqgsu1wlob" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_09.png" id="48_woqr8"]
+[ext_resource type="Texture2D" uid="uid://brtqt376hr6hi" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_10.png" id="49_5hide"]
+[ext_resource type="Texture2D" uid="uid://bllok1b3i0frm" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_11.png" id="50_24qq0"]
+[ext_resource type="Texture2D" uid="uid://pg5v0shp1uda" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_12.png" id="51_0bf8m"]
+[ext_resource type="Texture2D" uid="uid://bs4kfdln3v7s2" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_13.png" id="52_xsy3i"]
+[ext_resource type="Texture2D" uid="uid://btsqcbad3ie0m" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_14.png" id="53_pewdn"]
+[ext_resource type="Texture2D" uid="uid://demhdph7067hp" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_15.png" id="54_3aobd"]
+[ext_resource type="Texture2D" uid="uid://bhvcu2qh1t4xy" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_16.png" id="55_piop2"]
+[ext_resource type="Texture2D" uid="uid://cawcpp5iw7a5k" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_17.png" id="56_1mfho"]
+[ext_resource type="Texture2D" uid="uid://8focjmbs4m61" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_18.png" id="57_nbnu0"]
+[ext_resource type="Texture2D" uid="uid://b0j8mqvedsuii" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_19.png" id="58_a5tbe"]
+[ext_resource type="Texture2D" uid="uid://bsn2ei2yje7om" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_20.png" id="59_pjh1e"]
+[ext_resource type="Texture2D" uid="uid://b61r61clyi5tl" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_21.png" id="60_qe4c7"]
+[ext_resource type="Texture2D" uid="uid://btrcyh2wtlikh" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_22.png" id="61_1xgk7"]
+[ext_resource type="Texture2D" uid="uid://b2uafyiwplmwd" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_23.png" id="62_yuwjq"]
+[ext_resource type="Texture2D" uid="uid://byla6i3nqddul" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_24.png" id="63_t6dc8"]
+[ext_resource type="Texture2D" uid="uid://obwmmxf44s8s" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_25.png" id="64_xcwri"]
+[ext_resource type="Texture2D" uid="uid://cvxx32wuiqs0n" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_26.png" id="65_77yl0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bgq1p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_l2p7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dfo1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sbtrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_712od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hwuwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b3gvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i7mj6")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_6tuq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rqrn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bqvra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hrbfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_m3k2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i6n27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rbhh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hplh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ex24c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_kx32u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_al8nx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_nywqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5gm5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_av0dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_sy62a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_bpagh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a3try")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_e5d6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_037at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_fq6et")
+}],
+"loop": false,
+"name": &"death",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_djdyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_nxu4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_em1mh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_u4fu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_73uaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_8do74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_7r7g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_letln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_3ajer")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_pl7fm")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_u76we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_1gxb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_eijsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ge5wa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_5f8ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_2mcx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_p3qvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_qg8tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_lubvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_woqr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_5hide")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_24qq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_0bf8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_xsy3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_pewdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_3aobd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_piop2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_1mfho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_nbnu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_a5tbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_pjh1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_qe4c7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_1xgk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yuwjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_t6dc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_xcwri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_77yl0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7ujrm"]
+radius = 19.2354
+
+[node name="Player" instance=ExtResource("1_02dvs")]
+script = ExtResource("2_w1yt8")
+speed = 600
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_bgq1p")
+animation = &"attack"
+frame = 6
+frame_progress = 1.0
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_7ujrm")
+
+[node name="Camera2D" type="Camera2D" parent="." index="4"]
+zoom = Vector2(2.5, 2.5)
+process_callback = 0
+limit_left = 0
+limit_top = 0
+limit_right = 1134
+limit_bottom = 632
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
