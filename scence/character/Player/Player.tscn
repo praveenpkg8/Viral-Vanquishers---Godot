@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://deqeu0ppbible"]
+[gd_scene load_steps=75 format=3 uid="uid://deqeu0ppbible"]
 
 [ext_resource type="PackedScene" uid="uid://cvh0k335yu2ie" path="res://scence/character/EntityBase.tscn" id="1_02dvs"]
 [ext_resource type="Texture2D" uid="uid://yf0rgdj4cs3n" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-attack_0.png" id="2_l2p7w"]
@@ -66,6 +66,27 @@
 [ext_resource type="Texture2D" uid="uid://byla6i3nqddul" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_24.png" id="63_t6dc8"]
 [ext_resource type="Texture2D" uid="uid://obwmmxf44s8s" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_25.png" id="64_xcwri"]
 [ext_resource type="Texture2D" uid="uid://cvxx32wuiqs0n" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_26.png" id="65_77yl0"]
+[ext_resource type="Texture2D" uid="uid://pmngjw853h3i" path="res://sprite_sheets/Spritesheet.png" id="67_co7q0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr7m4"]
+atlas = ExtResource("67_co7q0")
+region = Rect2(0, 0, 2480, 3508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yp22"]
+atlas = ExtResource("67_co7q0")
+region = Rect2(2480, 0, 2480, 3508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h3bp5"]
+atlas = ExtResource("67_co7q0")
+region = Rect2(4960, 0, 2480, 3508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sikv7"]
+atlas = ExtResource("67_co7q0")
+region = Rect2(0, 3508, 2480, 3508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r37yw"]
+atlas = ExtResource("67_co7q0")
+region = Rect2(2480, 3508, 2480, 3508)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bgq1p"]
 animations = [{
@@ -280,6 +301,26 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hr7m4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0yp22")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h3bp5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sikv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r37yw")
+}],
+"loop": true,
+"name": &"idle-q",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7ujrm"]
@@ -292,9 +333,7 @@ speed = 600
 [node name="AnimatedSprite2D" parent="." index="0"]
 scale = Vector2(0.15, 0.15)
 sprite_frames = SubResource("SpriteFrames_bgq1p")
-animation = &"attack"
-frame = 6
-frame_progress = 1.0
+animation = &"idle-q"
 
 [node name="CollisionShape2D" parent="." index="1"]
 shape = SubResource("CircleShape2D_7ujrm")

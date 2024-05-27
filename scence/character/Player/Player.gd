@@ -6,7 +6,7 @@ extends "res://scence/character/EntityBase.gd"
 var direction: Vector2 = Vector2.ZERO
 
 func _ready():
-	sprite.play("idle")
+	sprite.play("idle-q")
 
 func _physics_process(delta):
 	direction = Input.get_vector("left", 'right', "up", "down")

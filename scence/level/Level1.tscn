@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dp3hamlmantbb"]
+[gd_scene load_steps=7 format=3 uid="uid://dp3hamlmantbb"]
 
 [ext_resource type="PackedScene" uid="uid://deqeu0ppbible" path="res://scence/character/Player/Player.tscn" id="1_cpcuc"]
+[ext_resource type="Texture2D" uid="uid://b10ofidlatsju" path="res://sprite_sheets/background/Paint Layer 2.PNG" id="1_f1sy8"]
 [ext_resource type="Texture2D" uid="uid://bage0c50agtc7" path="res://resouces/inside_body_a2_by_wingedavarice_d7wfabq-375w-2x.png" id="2_8ai8a"]
+[ext_resource type="Texture2D" uid="uid://ch6vr5bsbqb64" path="res://sprite_sheets/background/Paint Layer 1.PNG" id="4_uhjd8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stnxh"]
 texture = ExtResource("2_8ai8a")
@@ -2445,6 +2447,7 @@ sources/1 = SubResource("TileSetAtlasSource_stnxh")
 [node name="Level1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 tile_set = SubResource("TileSet_4sqhh")
 format = 2
 layer_0/name = "Blood"
@@ -2456,3 +2459,39 @@ layer_2/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("1_cpcuc")]
 position = Vector2(67, 74)
+
+[node name="-3" type="ParallaxBackground" parent="."]
+
+[node name="-3" type="ParallaxLayer" parent="-3"]
+
+[node name="TextureRect" type="TextureRect" parent="-3/-3"]
+offset_left = -82.0
+offset_top = -78.0
+offset_right = 3018.0
+offset_bottom = 4307.0
+scale = Vector2(0.412372, 0.184684)
+texture = ExtResource("1_f1sy8")
+
+[node name="-2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="-2"]
+
+[node name="TextureRect" type="TextureRect" parent="-2/ParallaxLayer"]
+offset_left = -90.0
+offset_top = -41.0
+offset_right = 3010.0
+offset_bottom = 4344.0
+scale = Vector2(0.422002, 0.178798)
+texture = ExtResource("4_uhjd8")
+
+[node name="-1" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="-1"]
+
+[node name="TextureRect" type="TextureRect" parent="-1/ParallaxLayer"]
+offset_left = -90.0
+offset_top = -41.0
+offset_right = 3010.0
+offset_bottom = 4344.0
+scale = Vector2(0.422002, 0.178798)
+texture = ExtResource("4_uhjd8")
