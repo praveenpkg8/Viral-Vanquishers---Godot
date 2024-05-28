@@ -1,0 +1,123 @@
+[gd_scene load_steps=19 format=3 uid="uid://dxatkae4xva0v"]
+
+[ext_resource type="PackedScene" uid="uid://bwqogijxq3pc2" path="res://scence/collectables/collectable_base.tscn" id="1_dkf3t"]
+[ext_resource type="Texture2D" uid="uid://m8ior51binw3" path="res://sprite_sheets/virus-spritesheet.png" id="2_gdhxk"]
+[ext_resource type="Script" path="res://scence/collectables/virus_essence/virus_essence.gd" id="2_wuwtb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6chk"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(0, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_toc8a"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(400, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dgu7"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(800, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5p2yr"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(1200, 0, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_keh6f"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(0, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7lmg"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(400, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb2va"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(800, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j67q3"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(1200, 225, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vfi1"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(0, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycory"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(400, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybnvl"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(800, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23rhy"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(1200, 450, 400, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v14e6"]
+atlas = ExtResource("2_gdhxk")
+region = Rect2(0, 675, 400, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6y8un"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6chk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_toc8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dgu7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5p2yr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_keh6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7lmg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pb2va")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j67q3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vfi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycory")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybnvl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23rhy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v14e6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v046x"]
+radius = 22.0
+height = 72.0
+
+[node name="VirusEssence" instance=ExtResource("1_dkf3t")]
+script = ExtResource("2_wuwtb")
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(38, 1)
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_6y8un")
+frame_progress = 0.678111
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-1, 7)
+shape = SubResource("CapsuleShape2D_v046x")
+
+[connection signal="on_player_interact" from="." to="." method="_on_on_player_interact"]
