@@ -66,7 +66,7 @@
 [ext_resource type="Texture2D" uid="uid://byla6i3nqddul" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_24.png" id="63_t6dc8"]
 [ext_resource type="Texture2D" uid="uid://obwmmxf44s8s" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_25.png" id="64_xcwri"]
 [ext_resource type="Texture2D" uid="uid://cvxx32wuiqs0n" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_26.png" id="65_77yl0"]
-[ext_resource type="Texture2D" uid="uid://pmngjw853h3i" path="res://sprite_sheets/Spritesheet.png" id="67_co7q0"]
+[ext_resource type="Texture2D" uid="uid://h2x5wq6neeg5" path="res://sprite_sheets/Spritesheet.png" id="67_co7q0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hr7m4"]
 atlas = ExtResource("67_co7q0")
@@ -323,20 +323,27 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7ujrm"]
-radius = 19.2354
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rs1t4"]
+radius = 12.9966
+height = 87.9314
 
-[node name="Player" instance=ExtResource("1_02dvs")]
+[node name="Player" groups=["Player"] instance=ExtResource("1_02dvs")]
+collision_layer = 2
+collision_mask = 29
 script = ExtResource("2_w1yt8")
 speed = 600
 
 [node name="AnimatedSprite2D" parent="." index="0"]
-scale = Vector2(0.15, 0.15)
+position = Vector2(0, 2.38419e-07)
+scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_bgq1p")
 animation = &"idle-q"
+frame_progress = 0.715642
 
 [node name="CollisionShape2D" parent="." index="1"]
-shape = SubResource("CircleShape2D_7ujrm")
+position = Vector2(2, -16)
+rotation = -1.59363
+shape = SubResource("CapsuleShape2D_rs1t4")
 
 [node name="Camera2D" type="Camera2D" parent="." index="4"]
 zoom = Vector2(2.5, 2.5)
