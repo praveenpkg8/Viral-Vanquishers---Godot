@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dp3hamlmantbb"]
+[gd_scene load_steps=10 format=3 uid="uid://dp3hamlmantbb"]
 
 [ext_resource type="PackedScene" uid="uid://deqeu0ppbible" path="res://scence/character/Player/Player.tscn" id="1_cpcuc"]
 [ext_resource type="Script" path="res://scence/level/Level1.gd" id="1_eeald"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bage0c50agtc7" path="res://resouces/inside_body_a2_by_wingedavarice_d7wfabq-375w-2x.png" id="2_8ai8a"]
 [ext_resource type="Texture2D" uid="uid://bc6apgyem3bfw" path="res://sprite_sheets/background/Paint Layer 1.PNG" id="4_uhjd8"]
 [ext_resource type="Script" path="res://scence/level/DebugLabel.gd" id="6_wnxrj"]
+[ext_resource type="PackedScene" uid="uid://bcwjv3bmeymh6" path="res://scence/level/main_menu/pause_menu.tscn" id="7_mglub"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stnxh"]
 texture = ExtResource("2_8ai8a")
@@ -2517,4 +2518,35 @@ text = "
 "
 script = ExtResource("6_wnxrj")
 
+[node name="PauseMenu" parent="." instance=ExtResource("7_mglub")]
+visible = false
+custom_minimum_size = Vector2(461, 221)
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 500.0
+offset_bottom = 300.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 0
+
+[node name="ColorRect" parent="PauseMenu" index="0"]
+offset_right = -39.0
+offset_bottom = -28.0
+
+[node name="VBoxContainer" parent="PauseMenu" index="1"]
+offset_left = -74.0
+offset_top = -44.0
+offset_right = 30.0
+offset_bottom = 15.0
+
+[node name="Continue" parent="PauseMenu/VBoxContainer" index="0"]
+theme_override_font_sizes/font_size = 24
+
+[node name="Quit" parent="PauseMenu/VBoxContainer" index="1"]
+theme_override_font_sizes/font_size = 24
+
 [connection signal="timeout" from="Spawner/Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="PauseMenu/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+
+[editable path="PauseMenu"]
