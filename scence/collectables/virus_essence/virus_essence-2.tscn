@@ -1,0 +1,89 @@
+[gd_scene load_steps=14 format=3 uid="uid://bn8uoodg8x4ha"]
+
+[ext_resource type="PackedScene" uid="uid://bwqogijxq3pc2" path="res://scence/collectables/collectable_base.tscn" id="1_7qbo6"]
+[ext_resource type="Script" path="res://scence/collectables/virus_essence/virus_essence.gd" id="2_g5v6w"]
+[ext_resource type="Texture2D" uid="uid://d3xccr1olpu6c" path="res://sprite_sheets/background/enemy/collectable-2.png" id="2_jm25y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvv4v"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(0, 0, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1fyn"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(3840, 0, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wh5w"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(7680, 0, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcm1p"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(0, 2160, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0aj6i"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(3840, 2160, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1iyv"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(7680, 2160, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4r3q"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(0, 4320, 3840, 2160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd28n"]
+atlas = ExtResource("2_jm25y")
+region = Rect2(3840, 4320, 3840, 2160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kw6y6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvv4v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1fyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wh5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcm1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0aj6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1iyv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4r3q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hd28n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lmc3a"]
+
+[node name="virus_essence_2" instance=ExtResource("1_7qbo6")]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("2_g5v6w")
+collectable_value = -1.0
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(48, 18)
+scale = Vector2(0.0811239, 0.0811239)
+sprite_frames = SubResource("SpriteFrames_kw6y6")
+frame_progress = 0.83845
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(2, 4)
+scale = Vector2(3.64518, 2.9884)
+shape = SubResource("CircleShape2D_lmc3a")
+
+[connection signal="on_player_interact" from="." to="." method="_on_on_player_interact"]

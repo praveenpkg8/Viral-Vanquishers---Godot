@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://dxatkae4xva0v"]
 
 [ext_resource type="PackedScene" uid="uid://bwqogijxq3pc2" path="res://scence/collectables/collectable_base.tscn" id="1_dkf3t"]
-[ext_resource type="Texture2D" uid="uid://m8ior51binw3" path="res://sprite_sheets/virus-spritesheet.png" id="2_gdhxk"]
+[ext_resource type="Texture2D" uid="uid://bec4q2tyg5dii" path="res://sprite_sheets/virus-spritesheet.png" id="2_gdhxk"]
 [ext_resource type="Script" path="res://scence/collectables/virus_essence/virus_essence.gd" id="2_wuwtb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p6chk"]
