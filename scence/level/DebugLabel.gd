@@ -1,6 +1,6 @@
 extends Label
 
-var current_score: int = 0
+var current_score: float = 0
 
 func _ready():
 	GlobalSignals.connect('picked_up_collectable', add_points)
@@ -10,6 +10,6 @@ func _process(delta):
 	pass
 
 func add_points(val: float):
-	current_score += 1
-	print(current_score)
+	current_score += val
+	print("cur", [current_score, val])
 	self.text = 'Current Score: '+str(current_score)
