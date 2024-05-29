@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://deqeu0ppbible" path="res://scence/character/Player/Player.tscn" id="1_cpcuc"]
 [ext_resource type="Script" path="res://scence/level/Level1.gd" id="1_eeald"]
-[ext_resource type="Texture2D" uid="uid://cqs76rdiq2miv" path="res://sprite_sheets/background/Paint Layer 2.PNG" id="1_f1sy8"]
+[ext_resource type="Texture2D" uid="uid://b10ofidlatsju" path="res://sprite_sheets/background/Paint Layer 2.PNG" id="1_f1sy8"]
 [ext_resource type="Texture2D" uid="uid://bage0c50agtc7" path="res://resouces/inside_body_a2_by_wingedavarice_d7wfabq-375w-2x.png" id="2_8ai8a"]
-[ext_resource type="Texture2D" uid="uid://bc6apgyem3bfw" path="res://sprite_sheets/background/Paint Layer 1.PNG" id="4_uhjd8"]
+[ext_resource type="Texture2D" uid="uid://ch6vr5bsbqb64" path="res://sprite_sheets/background/Paint Layer 1.PNG" id="4_uhjd8"]
 [ext_resource type="Script" path="res://scence/level/DebugLabel.gd" id="6_wnxrj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stnxh"]
@@ -2491,8 +2491,8 @@ texture = ExtResource("4_uhjd8")
 [node name="TextureRect" type="TextureRect" parent="-1/ParallaxLayer"]
 offset_left = -90.0
 offset_top = -41.0
-offset_right = 3010.0
-offset_bottom = 4344.0
+offset_right = 3019.0
+offset_bottom = 4484.0
 scale = Vector2(0.422002, 0.178798)
 texture = ExtResource("4_uhjd8")
 
