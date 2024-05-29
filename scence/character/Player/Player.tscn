@@ -66,7 +66,7 @@
 [ext_resource type="Texture2D" uid="uid://byla6i3nqddul" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_24.png" id="63_t6dc8"]
 [ext_resource type="Texture2D" uid="uid://obwmmxf44s8s" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_25.png" id="64_xcwri"]
 [ext_resource type="Texture2D" uid="uid://cvxx32wuiqs0n" path="res://resouces/blue-rim-light/coronavirus-blue-rim-light-idle1_26.png" id="65_77yl0"]
-[ext_resource type="Texture2D" uid="uid://h2x5wq6neeg5" path="res://sprite_sheets/Spritesheet.png" id="67_co7q0"]
+[ext_resource type="Texture2D" uid="uid://pmngjw853h3i" path="res://sprite_sheets/Spritesheet.png" id="67_co7q0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hr7m4"]
 atlas = ExtResource("67_co7q0")
