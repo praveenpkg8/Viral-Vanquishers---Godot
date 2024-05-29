@@ -4,12 +4,18 @@ extends Node2D
 @onready var spawner_timer = $Spawner/Timer
 @onready var debug_label___for_testing = $"CanvasLayer/DebugLabel | For testing"
 
-var VIRUS = preload("res://scence/collectables/virus_essence/virus_essence.tscn")
+var VIRUS = [
+		preload("res://scence/collectables/virus_essence/virus_essence.tscn"),
+		preload("res://scence/collectables/virus_essence/virus_essence-2.tscn"),
+	]
+#var VIRUS
+#var virus
 
 var can_spawn: bool = true
 
 func _ready():
 	GlobalSignals.connect('picked_up_collectable', add_cd_to_spawn)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -22,7 +28,7 @@ func check_and_spawn_virus():
 func spawn_viruses():
 	var screen = get_viewport().get_visible_rect().size
 	var position = Vector2(randf_range(0, screen.x), randf_range(0, screen.y))
-	var virus = VIRUS.instantiate()
+	var virus = VIRUS[randi_range(0,1)].instantiate()
 	virus.position = position
 	spawner.add_child(virus)
 
