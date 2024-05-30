@@ -68,7 +68,7 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_lmc3a"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s7eu1"]
 
 [node name="virus_essence_2" instance=ExtResource("1_7qbo6")]
 scale = Vector2(0.5, 0.5)
@@ -82,8 +82,8 @@ sprite_frames = SubResource("SpriteFrames_kw6y6")
 frame_progress = 0.83845
 
 [node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(2, 4)
-scale = Vector2(3.64518, 2.9884)
-shape = SubResource("CircleShape2D_lmc3a")
+position = Vector2(-2, 20)
+scale = Vector2(3.06377, 3.24167)
+shape = SubResource("CapsuleShape2D_s7eu1")
 
 [connection signal="on_player_interact" from="." to="." method="_on_on_player_interact"]
