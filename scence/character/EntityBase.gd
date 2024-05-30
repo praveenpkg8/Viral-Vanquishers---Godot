@@ -1,3 +1,4 @@
+class_name EntityBase
 extends CharacterBody2D
 @export var health: int = 100 :
 	set = _set_hp
